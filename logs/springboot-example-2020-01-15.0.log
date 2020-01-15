@@ -1,0 +1,596 @@
+10:45:38.440 [main] INFO  Example - Starting Example on Jarets-MacBook-Pro.local with PID 75312 (/Users/jbin/Desktop/Jaret/Tools/releasetest/6024/datomic-pro-0.9.6024/springboot-test/target/classes started by jbin in /Users/jbin/Desktop/Jaret/Tools/releasetest/6024/datomic-pro-0.9.6024/springboot-test)
+10:45:38.443 [main] INFO  Example - No active profile set, falling back to default profiles: default
+10:45:38.721 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@60ac1479: startup date [Wed Jan 15 10:45:38 EST 2020]; root of context hierarchy
+10:45:39.600 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+10:45:39.616 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:45:39.627 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:45:39.628 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+10:45:39.639 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/jbin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+10:45:39.709 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:45:39.709 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 989 ms
+10:45:39.758 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+10:45:39.761 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:45:39.762 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:45:39.762 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10:45:39.762 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+10:45:39.860 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:45:40.033 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@60ac1479: startup date [Wed Jan 15 10:45:38 EST 2020]; root of context hierarchy
+10:45:40.098 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto java.lang.String Example.home()
+10:45:40.136 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10:45:40.136 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10:45:40.158 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:45:40.158 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:45:40.268 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+10:45:40.281 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:45:40.304 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+10:45:40.319 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10:45:40.325 [main] INFO  Example - Started Example in 2.13 seconds (JVM running for 4.844)
+10:45:53.753 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+10:45:53.753 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+10:45:53.766 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+10:45:55.830 [http-nio-8080-exec-1] INFO  datomic.domain - {:event :cache/create, :cache-bytes 3817865216, :pid 75312, :tid 22}
+10:45:55.834 [http-nio-8080-exec-1] INFO  datomic.process-monitor - {:event :metrics/initializing, :metricsCallback clojure.core/identity, :phase :begin, :pid 75312, :tid 22}
+10:45:55.836 [http-nio-8080-exec-1] INFO  datomic.process-monitor - {:event :metrics/initializing, :metricsCallback clojure.core/identity, :msec 0.452, :phase :end, :pid 75312, :tid 22}
+10:45:55.836 [http-nio-8080-exec-1] INFO  datomic.process-monitor - {:metrics/started clojure.core/identity, :pid 75312, :tid 22}
+10:45:55.839 [clojure-agent-send-off-pool-0] INFO  datomic.process-monitor - {:AvailableMB 7100.0, :ObjectCacheCount 0, :event :metrics, :pid 75312, :tid 38}
+10:45:55.845 [clojure-agent-send-off-pool-0] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :phase :begin, :pid 75312, :tid 38}
+10:45:55.950 [clojure-agent-send-off-pool-0] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :msec 104.0, :phase :end, :pid 75312, :tid 38}
+10:45:55.961 [http-nio-8080-exec-1] INFO  datomic.peer - {:event :peer/connect-transactor, :host "localhost", :alt-host nil, :port 4334, :version "0.9.6024", :pid 75312, :tid 22}
+10:46:26.659 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is clojure.lang.ExceptionInfo: Error communicating with HOST localhost on PORT 4334 {:alt-host nil, :peer-version 2, :password "db8dio0TbsMNonxGVitag5P+WcWjK+eCZ5URSsx9WjU=", :username "tUcC4FFJtWPl05c/fV8BlUo6xS7cTJgOlhx189iQClY=", :port 4334, :host "localhost", :version "0.9.6024", :timestamp 1579103153873, :encrypt-channel true}] with root cause
+org.apache.activemq.artemis.api.core.ActiveMQConnectionTimedOutException: AMQ119014: Timed out after waiting 30,000 ms for response when sending packet -12
+	at org.apache.activemq.artemis.core.protocol.core.impl.ChannelImpl.sendBlocking(ChannelImpl.java:401)
+	at org.apache.activemq.artemis.core.protocol.core.impl.ChannelImpl.sendBlocking(ChannelImpl.java:319)
+	at org.apache.activemq.artemis.core.protocol.core.impl.ActiveMQSessionContext.createQueue(ActiveMQSessionContext.java:624)
+	at org.apache.activemq.artemis.core.client.impl.ClientSessionImpl.internalCreateQueue(ClientSessionImpl.java:1841)
+	at org.apache.activemq.artemis.core.client.impl.ClientSessionImpl.createTemporaryQueue(ClientSessionImpl.java:429)
+	at org.apache.activemq.artemis.core.client.impl.ClientSessionImpl.createTemporaryQueue(ClientSessionImpl.java:344)
+	at org.apache.activemq.artemis.core.client.impl.ClientSessionImpl.createTemporaryQueue(ClientSessionImpl.java:332)
+	at org.apache.activemq.artemis.core.client.impl.ClientSessionImpl.createTemporaryQueue(ClientSessionImpl.java:337)
+	at datomic.artemis_client$create_temporary_queue.invokeStatic(artemis_client.clj:139)
+	at datomic.artemis_client$create_temporary_queue.invoke(artemis_client.clj:134)
+	at clojure.core$partial$fn__4759.invoke(core.clj:2515)
+	at datomic.artemis_client$create_rpc_client.invokeStatic(artemis_client.clj:291)
+	at datomic.artemis_client$create_rpc_client.doInvoke(artemis_client.clj:278)
+	at clojure.lang.RestFn.invoke(RestFn.java:445)
+	at datomic.connector.TransactorHornetConnector$fn__8799.invoke(connector.clj:231)
+	at datomic.connector.TransactorHornetConnector.admin_request_STAR_(connector.clj:226)
+	at datomic.peer.Connection$fn__9057.invoke(peer.clj:236)
+	at datomic.peer.Connection.create_connection_state(peer.clj:222)
+	at datomic.peer$create_connection$reconnect_fn__9132.invoke(peer.clj:486)
+	at datomic.peer$create_connection.invokeStatic(peer.clj:487)
+	at datomic.peer$create_connection.invoke(peer.clj:451)
+	at datomic.peer$get_connection$fn__9188$fn__9190.invoke(peer.clj:673)
+	at datomic.peer$get_connection$fn__9188.invoke(peer.clj:670)
+	at datomic.peer$get_connection.invokeStatic(peer.clj:666)
+	at datomic.peer$get_connection.invoke(peer.clj:663)
+	at datomic.peer$connect_uri.invokeStatic(peer.clj:748)
+	at datomic.peer$connect_uri.invoke(peer.clj:740)
+	at clojure.lang.Var.invoke(Var.java:379)
+	at datomic.Peer.connect(Peer.java:106)
+	at Example.home(Example.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+10:46:55.843 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :PodGetMsec {:lo 104, :hi 104, :sum 104, :count 1}, :AvailableMB 7030.0, :ObjectCacheCount 0, :event :metrics, :pid 75312, :tid 39}
+10:47:16.982 [Thread-4] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@60ac1479: startup date [Wed Jan 15 10:45:38 EST 2020]; root of context hierarchy
+10:47:16.984 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+10:47:42.143 [main] INFO  Example - Starting Example on Jarets-MacBook-Pro.local with PID 76568 (/Users/jbin/Desktop/Jaret/Tools/releasetest/6024/datomic-pro-0.9.6024/springboot-test/target/classes started by jbin in /Users/jbin/Desktop/Jaret/Tools/releasetest/6024/datomic-pro-0.9.6024/springboot-test)
+10:47:42.146 [main] INFO  Example - No active profile set, falling back to default profiles: default
+10:47:42.424 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@eea98ec: startup date [Wed Jan 15 10:47:42 EST 2020]; root of context hierarchy
+10:47:43.284 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+10:47:43.303 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:47:43.317 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:47:43.317 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+10:47:43.330 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/jbin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+10:47:43.406 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:47:43.406 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 983 ms
+10:47:43.459 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+10:47:43.463 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:47:43.463 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:47:43.463 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10:47:43.463 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+10:47:43.602 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:47:43.801 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@eea98ec: startup date [Wed Jan 15 10:47:42 EST 2020]; root of context hierarchy
+10:47:43.878 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto java.lang.String Example.home()
+10:47:43.882 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10:47:43.883 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10:47:43.914 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:47:43.914 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:47:44.068 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+10:47:44.085 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:47:44.109 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+10:47:44.125 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10:47:44.131 [main] INFO  Example - Started Example in 2.358 seconds (JVM running for 5.018)
+10:47:52.187 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+10:47:52.188 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+10:47:52.201 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+10:47:54.873 [http-nio-8080-exec-1] INFO  datomic.domain - {:event :cache/create, :cache-bytes 3817865216, :pid 76568, :tid 22}
+10:47:54.879 [http-nio-8080-exec-1] INFO  datomic.process-monitor - {:event :metrics/initializing, :metricsCallback clojure.core/identity, :phase :begin, :pid 76568, :tid 22}
+10:47:54.882 [http-nio-8080-exec-1] INFO  datomic.process-monitor - {:event :metrics/initializing, :metricsCallback clojure.core/identity, :msec 0.67, :phase :end, :pid 76568, :tid 22}
+10:47:54.882 [http-nio-8080-exec-1] INFO  datomic.process-monitor - {:metrics/started clojure.core/identity, :pid 76568, :tid 22}
+10:47:54.888 [clojure-agent-send-off-pool-0] INFO  datomic.process-monitor - {:AvailableMB 7070.0, :ObjectCacheCount 0, :event :metrics, :pid 76568, :tid 38}
+10:47:54.896 [clojure-agent-send-off-pool-0] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :phase :begin, :pid 76568, :tid 38}
+10:47:55.021 [clojure-agent-send-off-pool-0] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :msec 125.0, :phase :end, :pid 76568, :tid 38}
+10:47:55.036 [http-nio-8080-exec-1] INFO  datomic.peer - {:event :peer/connect-transactor, :host "localhost", :alt-host nil, :port 4334, :version "0.9.6024", :pid 76568, :tid 22}
+10:48:25.637 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is clojure.lang.ExceptionInfo: Error communicating with HOST localhost on PORT 4334 {:alt-host nil, :peer-version 2, :password "<redacted>", :username "tUcC4FFJtWPl05c/fV8BlUo6xS7cTJgOlhx189iQClY=", :port 4334, :host "localhost", :version "0.9.6024", :timestamp 1579103273957, :encrypt-channel true}] with root cause
+org.apache.activemq.artemis.api.core.ActiveMQConnectionTimedOutException: AMQ119014: Timed out after waiting 30,000 ms for response when sending packet -12
+	at org.apache.activemq.artemis.core.protocol.core.impl.ChannelImpl.sendBlocking(ChannelImpl.java:401)
+	at org.apache.activemq.artemis.core.protocol.core.impl.ChannelImpl.sendBlocking(ChannelImpl.java:319)
+	at org.apache.activemq.artemis.core.protocol.core.impl.ActiveMQSessionContext.createQueue(ActiveMQSessionContext.java:624)
+	at org.apache.activemq.artemis.core.client.impl.ClientSessionImpl.internalCreateQueue(ClientSessionImpl.java:1841)
+	at org.apache.activemq.artemis.core.client.impl.ClientSessionImpl.createTemporaryQueue(ClientSessionImpl.java:429)
+	at org.apache.activemq.artemis.core.client.impl.ClientSessionImpl.createTemporaryQueue(ClientSessionImpl.java:344)
+	at org.apache.activemq.artemis.core.client.impl.ClientSessionImpl.createTemporaryQueue(ClientSessionImpl.java:332)
+	at org.apache.activemq.artemis.core.client.impl.ClientSessionImpl.createTemporaryQueue(ClientSessionImpl.java:337)
+	at datomic.artemis_client$create_temporary_queue.invokeStatic(artemis_client.clj:139)
+	at datomic.artemis_client$create_temporary_queue.invoke(artemis_client.clj:134)
+	at clojure.core$partial$fn__4759.invoke(core.clj:2515)
+	at datomic.artemis_client$create_rpc_client.invokeStatic(artemis_client.clj:291)
+	at datomic.artemis_client$create_rpc_client.doInvoke(artemis_client.clj:278)
+	at clojure.lang.RestFn.invoke(RestFn.java:445)
+	at datomic.connector.TransactorHornetConnector$fn__9009.invoke(connector.clj:217)
+	at datomic.connector.TransactorHornetConnector.admin_request_STAR_(connector.clj:212)
+	at datomic.peer.Connection$fn__9264.invoke(peer.clj:219)
+	at datomic.peer.Connection.create_connection_state(peer.clj:205)
+	at datomic.peer$create_connection$reconnect_fn__9339.invoke(peer.clj:469)
+	at datomic.peer$create_connection.invokeStatic(peer.clj:470)
+	at datomic.peer$create_connection.invoke(peer.clj:431)
+	at datomic.peer$get_connection$fn__9395$fn__9397.invoke(peer.clj:656)
+	at datomic.peer$get_connection$fn__9395.invoke(peer.clj:653)
+	at datomic.peer$get_connection.invokeStatic(peer.clj:649)
+	at datomic.peer$get_connection.invoke(peer.clj:646)
+	at datomic.peer$connect_uri.invokeStatic(peer.clj:743)
+	at datomic.peer$connect_uri.invoke(peer.clj:735)
+	at clojure.lang.Var.invoke(Var.java:379)
+	at datomic.Peer.connect(Peer.java:106)
+	at Example.home(Example.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+10:48:54.891 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :PodGetMsec {:lo 125, :hi 125, :sum 125, :count 1}, :AvailableMB 6980.0, :ObjectCacheCount 0, :event :metrics, :pid 76568, :tid 39}
+10:49:35.451 [clojure-agent-send-off-pool-1] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :phase :begin, :pid 76568, :tid 63}
+10:49:36.739 [clojure-agent-send-off-pool-1] INFO  datomic.kv-cluster - {:event :kv-cluster/retry, :StorageGetBackoffMsec 0, :attempts 0, :max-retries 20, :cause "java.net.ConnectException", :pid 76568, :tid 63}
+10:49:38.087 [clojure-agent-send-off-pool-1] INFO  datomic.kv-cluster - {:event :kv-cluster/retry, :StorageGetBackoffMsec 50, :attempts 1, :max-retries 20, :cause "java.net.ConnectException", :pid 76568, :tid 63}
+10:49:39.471 [clojure-agent-send-off-pool-1] INFO  datomic.kv-cluster - {:event :kv-cluster/retry, :StorageGetBackoffMsec 100, :attempts 2, :max-retries 20, :cause "java.net.ConnectException", :pid 76568, :tid 63}
+10:49:40.917 [clojure-agent-send-off-pool-1] INFO  datomic.kv-cluster - {:event :kv-cluster/retry, :StorageGetBackoffMsec 150, :attempts 3, :max-retries 20, :cause "java.net.ConnectException", :pid 76568, :tid 63}
+10:49:42.404 [clojure-agent-send-off-pool-1] INFO  datomic.kv-cluster - {:event :kv-cluster/retry, :StorageGetBackoffMsec 200, :attempts 4, :max-retries 20, :cause "java.net.ConnectException", :pid 76568, :tid 63}
+10:49:43.950 [clojure-agent-send-off-pool-1] INFO  datomic.kv-cluster - {:event :kv-cluster/retry, :StorageGetBackoffMsec 250, :attempts 5, :max-retries 20, :cause "java.net.ConnectException", :pid 76568, :tid 63}
+10:49:45.542 [clojure-agent-send-off-pool-1] INFO  datomic.kv-cluster - {:event :kv-cluster/retry, :StorageGetBackoffMsec 300, :attempts 6, :max-retries 20, :cause "java.net.ConnectException", :pid 76568, :tid 63}
+10:49:47.197 [clojure-agent-send-off-pool-1] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :msec 11700.0, :phase :end, :threw org.h2.jdbc.JdbcSQLException, :pid 76568, :tid 63}
+10:49:47.198 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.util.concurrent.ExecutionException: org.h2.jdbc.JdbcSQLException: Connection is broken: "java.net.ConnectException: Connection refused (Connection refused): localhost:4335" [90067-197]] with root cause
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:103)
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:83)
+	at org.h2.engine.SessionRemote.initTransfer(SessionRemote.java:114)
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:447)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:332)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:103)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:319)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:212)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:736)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:668)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.getConnection(ConnectionPool.java:198)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:132)
+	at datomic.sql$connect.invokeStatic(sql.clj:16)
+	at datomic.sql$connect.invoke(sql.clj:13)
+	at datomic.sql$select.invokeStatic(sql.clj:77)
+	at datomic.sql$select.invoke(sql.clj:75)
+	at datomic.kv_sql.KVSql.get(kv_sql.clj:60)
+	at datomic.kv_cluster.KVCluster$fn__4372$fn__4375$fn__4376.invoke(kv_cluster.clj:249)
+	at datomic.kv_cluster$retry_fn$fn__4252.invoke(kv_cluster.clj:82)
+	at datomic.kv_cluster$retry_fn.invokeStatic(kv_cluster.clj:82)
+	at datomic.kv_cluster$retry_fn.invoke(kv_cluster.clj:57)
+	at clojure.lang.AFn.applyToHelper(AFn.java:178)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:652)
+	at clojure.core$partial$fn__4765.doInvoke(core.clj:2534)
+	at clojure.lang.RestFn.invoke(RestFn.java:421)
+	at datomic.kv_cluster.KVCluster$fn__4372$fn__4375.invoke(kv_cluster.clj:249)
+	at datomic.kv_cluster.KVCluster$fn__4372.invoke(kv_cluster.clj:247)
+	at clojure.core$binding_conveyor_fn$fn__4676.invoke(core.clj:1938)
+	at clojure.lang.AFn.call(AFn.java:18)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+10:49:54.895 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :StorageGetBackoffMsec {:lo 0, :hi 300, :sum 1050, :count 7}, :PodGetMsec {:lo 11700, :hi 11700, :sum 11700, :count 1}, :AvailableMB 6980.0, :ObjectCacheCount 0, :event :metrics, :pid 76568, :tid 39}
+10:50:13.681 [clojure-agent-send-off-pool-1] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :phase :begin, :pid 76568, :tid 63}
+10:50:13.692 [clojure-agent-send-off-pool-1] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :msec 10.3, :phase :end, :pid 76568, :tid 63}
+10:50:13.695 [http-nio-8080-exec-3] INFO  datomic.peer - {:event :peer/connect-transactor, :host "localhost", :alt-host nil, :port 4334, :version "0.9.6024", :pid 76568, :tid 24}
+10:50:43.869 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is clojure.lang.ExceptionInfo: Error communicating with HOST localhost on PORT 4334 {:alt-host nil, :peer-version 2, :password "<redacted>", :username "1LCZ7pnaZIUSDh/DpeLjgtSVpkK01CvQ1dDtTd3L+6w=", :port 4334, :host "localhost", :version "0.9.6024", :timestamp 1579103409437, :encrypt-channel true}] with root cause
+org.apache.activemq.artemis.api.core.ActiveMQConnectionTimedOutException: AMQ119014: Timed out after waiting 30,000 ms for response when sending packet -12
+	at org.apache.activemq.artemis.core.protocol.core.impl.ChannelImpl.sendBlocking(ChannelImpl.java:401)
+	at org.apache.activemq.artemis.core.protocol.core.impl.ChannelImpl.sendBlocking(ChannelImpl.java:319)
+	at org.apache.activemq.artemis.core.protocol.core.impl.ActiveMQSessionContext.createQueue(ActiveMQSessionContext.java:624)
+	at org.apache.activemq.artemis.core.client.impl.ClientSessionImpl.internalCreateQueue(ClientSessionImpl.java:1841)
+	at org.apache.activemq.artemis.core.client.impl.ClientSessionImpl.createTemporaryQueue(ClientSessionImpl.java:429)
+	at org.apache.activemq.artemis.core.client.impl.ClientSessionImpl.createTemporaryQueue(ClientSessionImpl.java:344)
+	at org.apache.activemq.artemis.core.client.impl.ClientSessionImpl.createTemporaryQueue(ClientSessionImpl.java:332)
+	at org.apache.activemq.artemis.core.client.impl.ClientSessionImpl.createTemporaryQueue(ClientSessionImpl.java:337)
+	at datomic.artemis_client$create_temporary_queue.invokeStatic(artemis_client.clj:139)
+	at datomic.artemis_client$create_temporary_queue.invoke(artemis_client.clj:134)
+	at clojure.core$partial$fn__4759.invoke(core.clj:2515)
+	at datomic.artemis_client$create_rpc_client.invokeStatic(artemis_client.clj:291)
+	at datomic.artemis_client$create_rpc_client.doInvoke(artemis_client.clj:278)
+	at clojure.lang.RestFn.invoke(RestFn.java:445)
+	at datomic.connector.TransactorHornetConnector$fn__9009.invoke(connector.clj:217)
+	at datomic.connector.TransactorHornetConnector.admin_request_STAR_(connector.clj:212)
+	at datomic.peer.Connection$fn__9264.invoke(peer.clj:219)
+	at datomic.peer.Connection.create_connection_state(peer.clj:205)
+	at datomic.peer$create_connection$reconnect_fn__9339.invoke(peer.clj:469)
+	at datomic.peer$create_connection.invokeStatic(peer.clj:470)
+	at datomic.peer$create_connection.invoke(peer.clj:431)
+	at datomic.peer$get_connection$fn__9395$fn__9397.invoke(peer.clj:656)
+	at datomic.peer$get_connection$fn__9395.invoke(peer.clj:653)
+	at datomic.peer$get_connection.invokeStatic(peer.clj:649)
+	at datomic.peer$get_connection.invoke(peer.clj:646)
+	at datomic.peer$connect_uri.invokeStatic(peer.clj:743)
+	at datomic.peer$connect_uri.invoke(peer.clj:735)
+	at clojure.lang.Var.invoke(Var.java:379)
+	at datomic.Peer.connect(Peer.java:106)
+	at Example.home(Example.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+10:50:54.899 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :PodGetMsec {:lo 10, :hi 10, :sum 10, :count 1}, :AvailableMB 6970.0, :ObjectCacheCount 0, :event :metrics, :pid 76568, :tid 39}
+10:51:54.902 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 6970.0, :ObjectCacheCount 0, :event :metrics, :pid 76568, :tid 39}
+10:52:54.904 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 6960.0, :ObjectCacheCount 0, :event :metrics, :pid 76568, :tid 39}
+10:53:54.908 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 6960.0, :ObjectCacheCount 0, :event :metrics, :pid 76568, :tid 39}
+10:54:54.913 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 6960.0, :ObjectCacheCount 0, :event :metrics, :pid 76568, :tid 39}
+10:55:54.916 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 6960.0, :ObjectCacheCount 0, :event :metrics, :pid 76568, :tid 39}
+10:56:52.475 [Thread-4] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@eea98ec: startup date [Wed Jan 15 10:47:42 EST 2020]; root of context hierarchy
+10:56:52.476 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+10:58:46.852 [main] INFO  Example - Starting Example on Jarets-MacBook-Pro.local with PID 83563 (/Users/jbin/Desktop/Jaret/Tools/releasetest/6024/datomic-pro-0.9.6024/springboot-test/target/classes started by jbin in /Users/jbin/Desktop/Jaret/Tools/releasetest/6024/datomic-pro-0.9.6024/springboot-test)
+10:58:46.855 [main] INFO  Example - No active profile set, falling back to default profiles: default
+10:58:47.107 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14df1f98: startup date [Wed Jan 15 10:58:47 EST 2020]; root of context hierarchy
+10:58:48.036 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+10:58:48.056 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:58:48.073 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:58:48.073 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+10:58:48.085 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/jbin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+10:58:48.182 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:58:48.183 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1076 ms
+10:58:48.256 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+10:58:48.260 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:58:48.261 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:58:48.261 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10:58:48.261 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+10:58:48.400 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:58:48.630 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14df1f98: startup date [Wed Jan 15 10:58:47 EST 2020]; root of context hierarchy
+10:58:48.741 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto java.lang.String Example.home()
+10:58:48.747 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10:58:48.748 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10:58:48.793 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:58:48.793 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:58:48.974 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+10:58:48.990 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:58:49.023 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+10:58:49.042 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10:58:49.051 [main] INFO  Example - Started Example in 2.602 seconds (JVM running for 4.904)
+10:58:52.758 [Thread-4] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14df1f98: startup date [Wed Jan 15 10:58:47 EST 2020]; root of context hierarchy
+10:58:52.760 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+10:59:29.806 [main] INFO  Example - Starting Example on Jarets-MacBook-Pro.local with PID 84041 (/Users/jbin/Desktop/Jaret/Tools/releasetest/6024/datomic-pro-0.9.6024/springboot-test/target/classes started by jbin in /Users/jbin/Desktop/Jaret/Tools/releasetest/6024/datomic-pro-0.9.6024/springboot-test)
+10:59:29.809 [main] INFO  Example - No active profile set, falling back to default profiles: default
+10:59:30.013 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@31b0877e: startup date [Wed Jan 15 10:59:30 EST 2020]; root of context hierarchy
+10:59:31.039 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+10:59:31.056 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:59:31.068 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:59:31.069 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+10:59:31.082 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/jbin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+10:59:31.171 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:59:31.171 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1158 ms
+10:59:31.280 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+10:59:31.284 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:59:31.285 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:59:31.285 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10:59:31.285 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+10:59:31.410 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:59:31.613 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@31b0877e: startup date [Wed Jan 15 10:59:30 EST 2020]; root of context hierarchy
+10:59:31.691 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto java.lang.String Example.home()
+10:59:31.695 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10:59:31.695 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10:59:31.722 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:59:31.722 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:59:31.858 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+10:59:31.872 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:59:31.897 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+10:59:31.914 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10:59:31.920 [main] INFO  Example - Started Example in 2.388 seconds (JVM running for 5.307)
+11:00:01.610 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+11:00:01.610 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+11:00:01.626 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+11:00:04.032 [http-nio-8080-exec-1] INFO  datomic.domain - {:event :cache/create, :cache-bytes 3817865216, :pid 84041, :tid 22}
+11:00:04.037 [http-nio-8080-exec-1] INFO  datomic.process-monitor - {:event :metrics/initializing, :metricsCallback clojure.core/identity, :phase :begin, :pid 84041, :tid 22}
+11:00:04.039 [http-nio-8080-exec-1] INFO  datomic.process-monitor - {:event :metrics/initializing, :metricsCallback clojure.core/identity, :msec 0.485, :phase :end, :pid 84041, :tid 22}
+11:00:04.039 [http-nio-8080-exec-1] INFO  datomic.process-monitor - {:metrics/started clojure.core/identity, :pid 84041, :tid 22}
+11:00:04.044 [clojure-agent-send-off-pool-0] INFO  datomic.process-monitor - {:AvailableMB 7080.0, :ObjectCacheCount 0, :event :metrics, :pid 84041, :tid 40}
+11:00:04.050 [clojure-agent-send-off-pool-0] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :phase :begin, :pid 84041, :tid 40}
+11:00:04.147 [clojure-agent-send-off-pool-0] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :msec 96.6, :phase :end, :pid 84041, :tid 40}
+11:00:04.159 [http-nio-8080-exec-1] INFO  datomic.peer - {:event :peer/connect-transactor, :host "localhost", :alt-host nil, :port 4334, :version "0.9.6024", :pid 84041, :tid 22}
+11:00:34.813 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is clojure.lang.ExceptionInfo: Error communicating with HOST localhost on PORT 4334 {:alt-host nil, :peer-version 2, :password "<redacted>", :username "1LCZ7pnaZIUSDh/DpeLjgtSVpkK01CvQ1dDtTd3L+6w=", :port 4334, :host "localhost", :version "0.9.6024", :timestamp 1579103999832, :encrypt-channel true}] with root cause
+org.apache.activemq.artemis.api.core.ActiveMQConnectionTimedOutException: AMQ119014: Timed out after waiting 30,000 ms for response when sending packet -12
+	at org.apache.activemq.artemis.core.protocol.core.impl.ChannelImpl.sendBlocking(ChannelImpl.java:401)
+	at org.apache.activemq.artemis.core.protocol.core.impl.ChannelImpl.sendBlocking(ChannelImpl.java:319)
+	at org.apache.activemq.artemis.core.protocol.core.impl.ActiveMQSessionContext.createQueue(ActiveMQSessionContext.java:624)
+	at org.apache.activemq.artemis.core.client.impl.ClientSessionImpl.internalCreateQueue(ClientSessionImpl.java:1841)
+	at org.apache.activemq.artemis.core.client.impl.ClientSessionImpl.createTemporaryQueue(ClientSessionImpl.java:429)
+	at org.apache.activemq.artemis.core.client.impl.ClientSessionImpl.createTemporaryQueue(ClientSessionImpl.java:344)
+	at org.apache.activemq.artemis.core.client.impl.ClientSessionImpl.createTemporaryQueue(ClientSessionImpl.java:332)
+	at org.apache.activemq.artemis.core.client.impl.ClientSessionImpl.createTemporaryQueue(ClientSessionImpl.java:337)
+	at datomic.artemis_client$create_temporary_queue.invokeStatic(artemis_client.clj:139)
+	at datomic.artemis_client$create_temporary_queue.invoke(artemis_client.clj:134)
+	at clojure.core$partial$fn__4759.invoke(core.clj:2515)
+	at datomic.artemis_client$create_rpc_client.invokeStatic(artemis_client.clj:291)
+	at datomic.artemis_client$create_rpc_client.doInvoke(artemis_client.clj:278)
+	at clojure.lang.RestFn.invoke(RestFn.java:445)
+	at datomic.connector.TransactorHornetConnector$fn__9009.invoke(connector.clj:217)
+	at datomic.connector.TransactorHornetConnector.admin_request_STAR_(connector.clj:212)
+	at datomic.peer.Connection$fn__9264.invoke(peer.clj:219)
+	at datomic.peer.Connection.create_connection_state(peer.clj:205)
+	at datomic.peer$create_connection$reconnect_fn__9339.invoke(peer.clj:469)
+	at datomic.peer$create_connection.invokeStatic(peer.clj:470)
+	at datomic.peer$create_connection.invoke(peer.clj:431)
+	at datomic.peer$get_connection$fn__9395$fn__9397.invoke(peer.clj:656)
+	at datomic.peer$get_connection$fn__9395.invoke(peer.clj:653)
+	at datomic.peer$get_connection.invokeStatic(peer.clj:649)
+	at datomic.peer$get_connection.invoke(peer.clj:646)
+	at datomic.peer$connect_uri.invokeStatic(peer.clj:743)
+	at datomic.peer$connect_uri.invoke(peer.clj:735)
+	at clojure.lang.Var.invoke(Var.java:379)
+	at datomic.Peer.connect(Peer.java:106)
+	at Example.home(Example.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+11:01:04.048 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :PodGetMsec {:lo 96, :hi 96, :sum 96, :count 1}, :AvailableMB 6990.0, :ObjectCacheCount 0, :event :metrics, :pid 84041, :tid 41}
+11:01:51.752 [Thread-4] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@31b0877e: startup date [Wed Jan 15 10:59:30 EST 2020]; root of context hierarchy
+11:01:51.753 [Thread-4] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+11:02:36.354 [main] INFO  Example - Starting Example on Jarets-MacBook-Pro.local with PID 86072 (/Users/jbin/Desktop/Jaret/Tools/releasetest/6024/datomic-pro-0.9.6024/springboot-test/target/classes started by jbin in /Users/jbin/Desktop/Jaret/Tools/releasetest/6024/datomic-pro-0.9.6024/springboot-test)
+11:02:36.355 [main] INFO  Example - No active profile set, falling back to default profiles: default
+11:02:36.875 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+11:02:36.880 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+11:02:36.880 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:02:36.880 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+11:02:36.920 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:02:36.921 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 453 ms
+11:02:37.022 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:02:37.103 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+11:02:37.132 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+11:02:37.134 [main] INFO  Example - Started Example in 1.145 seconds (JVM running for 1.473)
+11:03:12.404 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:03:12.404 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:03:12.408 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+11:03:13.965 [http-nio-8080-exec-1] INFO  datomic.domain - {:event :cache/create, :cache-bytes 3817865216, :pid 86072, :tid 19}
+11:03:13.968 [http-nio-8080-exec-1] INFO  datomic.process-monitor - {:event :metrics/initializing, :metricsCallback clojure.core/identity, :phase :begin, :pid 86072, :tid 19}
+11:03:13.970 [http-nio-8080-exec-1] INFO  datomic.process-monitor - {:event :metrics/initializing, :metricsCallback clojure.core/identity, :msec 0.414, :phase :end, :pid 86072, :tid 19}
+11:03:13.970 [http-nio-8080-exec-1] INFO  datomic.process-monitor - {:metrics/started clojure.core/identity, :pid 86072, :tid 19}
+11:03:13.974 [clojure-agent-send-off-pool-0] INFO  datomic.process-monitor - {:AvailableMB 7080.0, :ObjectCacheCount 0, :event :metrics, :pid 86072, :tid 36}
+11:03:13.978 [clojure-agent-send-off-pool-0] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :phase :begin, :pid 86072, :tid 36}
+11:03:14.065 [clojure-agent-send-off-pool-0] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :msec 86.3, :phase :end, :pid 86072, :tid 36}
+11:03:14.076 [http-nio-8080-exec-1] INFO  datomic.peer - {:event :peer/connect-transactor, :host "localhost", :alt-host nil, :port 4334, :version "0.9.6024", :pid 86072, :tid 19}
+11:03:14.804 [clojure-agent-send-off-pool-0] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-log-tail/mbrainz-1968-1973-5eb7d5e5-ce52-431a-a46a-2eb699bc6c0d", :phase :begin, :pid 86072, :tid 36}
+11:03:14.806 [clojure-agent-send-off-pool-0] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-log-tail/mbrainz-1968-1973-5eb7d5e5-ce52-431a-a46a-2eb699bc6c0d", :msec 1.75, :phase :end, :pid 86072, :tid 36}
+11:03:14.988 [http-nio-8080-exec-1] INFO  datomic.log - {:event :log/catchup-fulltext, :phase :begin, :pid 86072, :tid 19}
+11:03:14.990 [http-nio-8080-exec-1] INFO  datomic.log - {:event :log/catchup-fulltext, :msec 1.73, :phase :end, :pid 86072, :tid 19}
+11:03:14.990 [http-nio-8080-exec-1] INFO  datomic.log - {:event :log/catchup, :bytes 0, :tail-t 246349, :index-t 246349, :msec 30, :pid 86072, :tid 19}
+11:03:15.008 [clojure-agent-send-off-pool-3] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-log-tail/mbrainz-1968-1973-5eb7d5e5-ce52-431a-a46a-2eb699bc6c0d", :phase :begin, :pid 86072, :tid 62}
+11:03:15.010 [clojure-agent-send-off-pool-3] INFO  datomic.kv-cluster - {:event :kv-cluster/get-pod, :pod-key "pod-log-tail/mbrainz-1968-1973-5eb7d5e5-ce52-431a-a46a-2eb699bc6c0d", :msec 1.16, :phase :end, :pid 86072, :tid 62}
+11:03:15.045 [http-nio-8080-exec-1] INFO  datomic.log - {:event :log/catchup-fulltext, :phase :begin, :pid 86072, :tid 19}
+11:03:15.045 [http-nio-8080-exec-1] INFO  datomic.log - {:event :log/catchup-fulltext, :msec 0.0689, :phase :end, :pid 86072, :tid 19}
+11:03:15.045 [http-nio-8080-exec-1] INFO  datomic.log - {:event :log/catchup, :bytes 0, :tail-t 246349, :index-t 246349, :msec 0, :pid 86072, :tid 19}
+11:03:15.055 [http-nio-8080-exec-1] INFO  datomic.peer - {:event :peer/cache-connection, :protocol :dev, :db-name "mbrainz-1968-1973", :system-root "localhost:4334", :host "localhost", :port 4334, :db-id "mbrainz-1968-1973-5eb7d5e5-ce52-431a-a46a-2eb699bc6c0d", :pid 86072, :tid 19}
+11:04:13.980 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:tid 37, :ObjectCacheCount 30, :AvailableMB 7160.0, :StorageGetMsec {:lo 0, :hi 2, :sum 14, :count 32}, :pid 86072, :event :metrics, :ObjectCache {:lo 0, :hi 1, :sum 57, :count 97}, :LogIngestMsec {:lo 0, :hi 30, :sum 30, :count 2}, :MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :DbAddFulltextMsec {:lo 0, :hi 1, :sum 1, :count 2}, :PodGetMsec {:lo 1, :hi 86, :sum 88, :count 3}, :LogIngestBytes {:lo 0, :hi 0, :sum 0, :count 2}, :StorageGetBytes {:lo 63, :hi 63359, :sum 148321, :count 32}}
+11:05:13.982 [Datomic Metrics Reporter] INFO  datomic.process-monitor - {:MetricsReport {:lo 1, :hi 1, :sum 1, :count 1}, :AvailableMB 7160.0, :ObjectCacheCount 30, :event :metrics, :pid 86072, :tid 37}
+11:05:23.051 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
